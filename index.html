@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Change Background Color</title>
+        
+        <style>
+            body{
+                text-align: center;
+                background-color: black;
+            }
+            #colorchange
+            {
+                width:15%;
+                height:10%;
+                margin:5%;
+
+            }
+            button
+            {
+                border-radius: 50px;
+    	        background:linear-gradient(to bottom,green,blue);
+	            color: white;
+	            padding: 5px 15px;
+    	        margin: 5px;
+    	        text-align: center;
+    	        text-decoration: none;
+    	        display: inline-block;
+    	        font-weight: bold;
+	            width: 10%;
+
+            }
+        </style>
+    </head>
+
+
+    <body>
+        <input type="color" id="colorchange"><br>
+        <h3>Click On The Above Box To Change The Background Color</h3>
+        <button type="button" onclick="colorchange()">Change</button>
+    </body>
+
+
+    <script>
+        function colorchange()
+        {
+            var color = document.getElementById("colorchange").value;
+            document.body.style.backgroundColor = color;
+        }
+    </script>
+</html>
