@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Change Background Color</title>
+        
+        <style>
+            body{
+                text-align: center;
+                background-color: black;
+            }
+            #colorchange
+            {
+                width:15%;
+                height:10%;
+                margin:5%;
+
+            }
+            button,a,h2
+            {
+                border-radius: 50px;
+    	        background:linear-gradient(to bottom,green,blue);
+	            color: white;
+	            padding: 10px 15px;
+    	        margin: 5px;
+    	        text-align: center;
+    	        text-decoration: none;
+    	        display: inline-block;
+    	        font-weight: bold;
+	            width: 10%;
+            }
+            a
+            {
+                margin: 5%;
+                width:20%;
+                padding: 10px 20px;
+
+            }
+        </style>
+    </head>
+
+
+    <body>
+        <!--input type="color" id="colorchange"--><br>
+        <h2>Color: </h2>
+        <h2 id="colour"></h2><br>
+        <!--button type="button" onclick="colorchange()">Change</button-->
+        <a href="back.html">Choose</a>
+    </body>
+
+
+    <script>
+        var color = window.prompt("Enter color : ");
+        id = document.getElementById("colour").innerHTML = color;
+        document.body.style.backgroundColor = color;
+        /*function colorchange()
+        {
+            document.body.style.backgroundColor = color;
+        }*/
+    </script>
+</html>
